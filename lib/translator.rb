@@ -7,6 +7,7 @@ def load_library(path)
     'get_meaning' => {},
     'get_emoticon' => {}
   }
+  binding.pry
   emo.each do |key,value|
       newhash['get_meaning'][value[1]]= key
       newhash['get_emoticon'][value[0]] = value[1]
